@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <SurfaceView
-        android:id="@+id/mSurfaceView"
+    <FrameLayout
+        android:id="@+id/previewContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
     <ImageView
@@ -76,7 +76,7 @@
             android:layout_below="@+id/llSettingSwitcher"
             android:gravity="center"
             android:background="@color/colorHalfTransparentBlack">
-            <ImageView
+            <com.zephyr.sweetcameraapp.view.SquareImageView
                 android:id="@+id/ivPreview"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
